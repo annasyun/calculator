@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <header class="cont-tit">
+        <h1 class="txt-tit">내가 갚아야하는 이자는?</h1>
+        <p class="txt-tit-desc">내게 적절한 대출상품을 찾아보자</p>
+    </header>
+    <main>
+        <form >
+            <h2 class="hidden">대출 정보</h2>
+            <!--클래스명 커버업-->
+            <label for="txt-loan-amount">대출금액</label>
+            <input type="number" id="put-loan-amount"> 
+            <!--required,플레이스폴더 추가하기!!! , id -for 문 똑같이하기!!!-->
+            <label for="txt-loan-period">대출기간</label>
+            <input type="number" id="">
+            <label for="Loan Interest Rate">대출금리</label>
+            <input type="number" id="">
+            <label for="">상환방법</label>
+            <input type="number" id="">
+        </form>
+        <button type="button">계산하기</button>
+        <section>
+            <h2>간편 대출이자 계산결과</h2>
+            <span>총 납입금액:</span>
+            <strong></strong>
+            <span>총이자:</span>
+            <strong></strong>
+        </section>
+            <table>
+                <legend>상세 대출이자 계산결과</legend>
+                <tr>
+                    <th>회차</th>
+                    <th>납입금액</th>
+
+                    
+                    <th>원금</th>
+                    <th>이자</th>
+                    <th>잔금</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>3,666</td>
+                    <td>0</td>
+                    <td>3,666</td>
+                    <td>2,000,000</td>
+                </tr>
+            </table>
+    </main>
+</body>
+</html>
+
+<!--
+    계산결과 모달창??
+    계산결과 초기화 버튼! ,로딩이미지 추가하기!,체크박스 만들기!, 라디오 버튼 네임으로 연결하기!
+    버튼 초기화(reset)
+    button submit
+-->
