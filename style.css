@@ -1,0 +1,74 @@
+/* font 다운 필요*/
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* body */
+body {
+    font-family: 'GmarketSansMedium';
+    color: white;
+}
+
+.wrapper {
+    text-align: center;
+    background-color: #0473bc;
+    margin: 0 auto;
+    width: 500px;
+    height: 650px;
+    border-radius: 5%;
+    box-shadow: 10px 5px 5px #add7e6;
+}
+
+/* header */
+.cont-tit {
+    display: inline-block;
+    margin: 5% 0 10% 0;
+}
+
+.txt-tit {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+/* main */
+.form-loan-info {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.form-loan-info span {
+    display: inline-block;
+    width: 100px;
+    height: 20px;
+    background-color:#059fdb;
+}
+
+.txt-loan-interest-rate {
+    margin-bottom: 1rem;
+}
+
+button.reset {
+    margin-bottom: 1rem;
+}
+
+.sec-loading {
+    margin-bottom: 1rem;
+}
+
+.img-loading {
+    width: 100px;
+    height: 100px;
+}
+.sec-short-result {
+    margin-bottom: 1rem;
+}
+
+
+.table-detailed-result {
+    display: inline-block;
+}

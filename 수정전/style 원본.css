@@ -1,0 +1,51 @@
+/* font 다운 필요*/
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body {
+    font-family: 'GmarketSansMedium';
+    color: white;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: #add7e6;
+    margin: 0 auto;
+    width: 600px;
+    height: 650px;
+    border-radius: 5%;
+    box-shadow: 10px 5px 5px #add7e6;
+}
+
+/* header /
+.cont-tit {
+    background-color: red;
+    margin: 5% 0 5% 0;
+}
+
+/ main */
+.form-loan-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-loan-info span {
+    background-color: blue;
+}
+
+.img-loading {
+    width: 100px;
+    height: 100px;
+}
+
+.table-detailed-result {
+    display: inline-block;
+}
