@@ -19,25 +19,25 @@
 
             <form class="form-loan-info">
                 <h2 class="cover-up">대출 정보</h2>
-                <label class="txt-loan-amount" for="loan-amount"><span>대출금액</span>
-                    <input class="put-loan-amount" type="number" id="loan-amount" placeholder="예) 2,000,000원" required> 
+                <label class="txt-loan-amount" for="loan-amount"><span>대출금액 :</span>
+                    <input class="put-loan-amount" type="number" id="loan-amount" placeholder="예)  2,000,000" required> 원
                 </label>
-                <label class="txt-loan-period" for="loan-period"><span>대출기간</span>
-                    <input class="put-loan-period" type="number" id="loan-period" placeholder="예) 1년" required>
+                <label class="txt-loan-period" for="loan-period"><span>대출기간 :</span>
+                    <input class="put-loan-period" type="number" id="loan-period" placeholder="예)  1" required> 년
                 </label>
                 
-                <label class="txt-loan-interest-rate" for="loan-interest-rate"><span>대출금리</span>
-                    <input class="put-loan-interest-rate" type="number" id="loan-interest-rate" placeholder="예) 2.2%" required>
+                <label class="txt-loan-interest-rate" for="loan-interest-rate"><span>대출금리 :</span>
+                    <input class="put-loan-interest-rate" type="number" id="loan-interest-rate" placeholder="예)  2.2" required> %
                 </label>
-                <label class="txt-repayment-type" for="repayment-type"><p>상환방법</p>
+                <label class="txt-repayment-type" for="repayment-type"><p class="method">상환방법</p>
                     <input class="put-repayment-type" type="radio" id="repayment-type" name="repayment-type" required> 만기일시상환
                     <input class="put-repayment-type" type="radio" id="repayment-type" name="repayment-type" required> 원금균등분할상환
                     <input class="put-repayment-type" type="radio" id="repayment-type" name="repayment-type" required> 원리금균등분할상환
                 </label>
             </form>
 
-            <button class="cal" type="button">계산하기</button>
-            <button class="reset" type="button">초기화</button>
+            <button class="cal" type="button">CALCULATE</button>
+            <button class="reset" type="button">RESET</button>
             
             <section class="sec-loading">
                 <img class="img-loading" src="./src/flower.png" alt="">

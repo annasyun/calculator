@@ -6,26 +6,34 @@
     font-style: normal;
 }
 
-/* body */
+
+/* body -------------------------------------- */
 body {
     font-family: 'GmarketSansMedium';
-    color: white;
+    color: #0473bc;
+    /* color: white; */
 }
 
 .wrapper {
     text-align: center;
-    background-color: #0473bc;
+    background-color: white;
+    /* background-color: #0473bc; */
     margin: 0 auto;
+    margin-top: 5%;
     width: 500px;
-    height: 650px;
+    height: 750px;
     border-radius: 5%;
-    box-shadow: 10px 5px 5px #add7e6;
+    box-shadow:0px 5px 50px #ab3e3e;
+    /* box-shadow: 10px 5px 5px #add7e6; */
 }
 
-/* header */
+
+/* header -------------------------------------- */
 .cont-tit {
     display: inline-block;
-    margin: 5% 0 10% 0;
+    margin: 13% 0 7% 0;
+    border-bottom: 1px solid #0473bc;
+
 }
 
 .txt-tit {
@@ -34,19 +42,82 @@ body {
     margin-bottom: 1rem;
 }
 
-/* main */
+.txt-tit-desc {
+    margin: 8% 0 8% 0;
+    font-weight: bold;
+}
+
+/* main -------------------------------------- */
 .form-loan-info {
     display: flex;
     flex-direction: column;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
+    
 }
 
 .form-loan-info span {
     display: inline-block;
     width: 100px;
     height: 20px;
-    background-color:#059fdb;
+    font-weight: bold;
+    /* background-color:#059fdb; */
 }
+
+.put-loan-amount:hover {
+    box-shadow:0px 1px 10px #ab3e3e;
+    /* border: 3px solid #589cc9; */
+}
+
+.put-loan-period:hover {
+    box-shadow:0px 1px 10px #ab3e3e;
+}
+
+.put-loan-interest-rate:hover {
+    box-shadow:0px 1px 10px #ab3e3e;
+}
+
+.put-loan-amount, .put-loan-period, .put-loan-interest-rate {
+    /* border: black solid 2px; */
+    margin-bottom: 10px;
+    /* margin-left: 20px; */
+    border: 3px solid #b5cbd9;
+    border-radius: 5px;
+    width: 250px;
+    height: 25px;
+    padding-left: 10px;
+}
+
+.cal, .reset {
+    color: #0473bc;
+    font-weight: bold;
+    border: 3px solid #b5cbd9;
+    border-radius: 5px;
+}
+
+.cal:hover {
+    box-shadow:0px 1px 10px #ab3e3e;
+}
+
+.reset:hover {
+    box-shadow:0px 1px 10px #ab3e3e;
+}
+
+input {
+    font-weight: bold;
+}
+
+.txt-repayment-type {
+    margin-top: 5%;
+}
+
+.method {
+    margin: 0 auto;
+    margin-bottom: 20px;
+    width: 100px;
+    border-bottom: 1px solid #0473bc;
+    padding-bottom: 3%;
+}
+
 
 .txt-loan-interest-rate {
     margin-bottom: 1rem;
