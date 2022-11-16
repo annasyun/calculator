@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>대출금리계산기</title>
     <link rel="stylesheet" href="./reset.css">
     <link rel="stylesheet" href="./style.css">
 </head>
@@ -19,41 +19,47 @@
 
             <form class="form-loan-info">
                 <h2 class="cover-up">대출 정보</h2>
-                <label class="txt-loan-amount" for="loan-amount"><span>대출금액 :</span>
-                    <input class="put-loan-amount" type="number" id="loan-amount" placeholder="예)  2,000,000" required> 원
+                <label class="txt-loan-amount"><span>대출금액 :</span>
+                    <input class="put-loan-amount" type="number" placeholder="예)  2,000,000" required> 원
                 </label>
-                <label class="txt-loan-period" for="loan-period"><span>대출기간 :</span>
-                    <input class="put-loan-period" type="number" id="loan-period" placeholder="예)  1" required> 년
+
+                <label class="txt-loan-period"><span>대출기간 :</span>
+                    <input class="put-loan-period" type="number" placeholder="예)  1" required> 년
                 </label>
                 
-                <label class="txt-loan-interest-rate" for="loan-interest-rate"><span>대출금리 :</span>
+                <label class="txt-loan-interest-rate"><span>대출금리 :</span>
                     <input class="put-loan-interest-rate" type="number" id="loan-interest-rate" placeholder="예)  2.2" required> %
-                </label>
-                <label class="txt-repayment-type" for="repayment-type"><p class="method">상환방법</p>
-                    <input class="put-repayment-type" type="radio" id="repayment-type" name="repayment-type" required> 만기일시상환
-                    <input class="put-repayment-type" type="radio" id="repayment-type" name="repayment-type" required> 원금균등분할상환
-                    <input class="put-repayment-type" type="radio" id="repayment-type" name="repayment-type" required> 원리금균등분할상환
                 </label>
             </form>
 
-            <button class="cal" type="button">CALCULATE</button>
-            <button class="reset" type="button">RESET</button>
+            <form class="txt-repayment-type"><p class="method">상환방법</p>
+                <input class="put-repayment-type" type="radio" name="repayment-type" required> 만기일시상환
+                <input class="put-repayment-type" type="radio" name="repayment-type" required> 원금균등분할상환
+                <input class="put-repayment-type" type="radio" name="repayment-type" required> 원리금균등분할상환
+            </form>
+
+            <section class="btn-container">
+                <h2 class="cover-up">버튼</h2>
+                <button class="cal" type="button">CALCULATE</button>
+                <button class="reset" type="button">RESET</button>
+             </section>
             
             <section class="sec-loading">
+                <h2 class="cover-up">계산화면</h2>
                 <img class="img-loading" src="./src/flower.png" alt="">
             </section>
 
 
             <section class="sec-short-result">
                 <h2 class="simple-result cover-up">간편 대출이자 계산결과</h2>
-                <span class="txt-payment">총 납입금액:</span>
+                <span class="txt-payment">총 납입금액 :</span>
                 <strong class="value-payment"></strong>
-                <span class="txt-interest">총이자:</span>
+                <span class="txt-interest">총 이자 :</span>
                 <strong class="value-interest"></strong>
             </section>
             
             <table class="table-detailed-result">
-                <legend class="detailed-result cover-up">상세 대출이자 계산결과</legend>
+                <caption class="detailed-result cover-up">상세 대출이자 계산결과</caption>
                 <thead class="tit-detailed-result">
                     <tr>
                         <th>회차</th>

@@ -23,7 +23,7 @@ body {
     width: 500px;
     height: 750px;
     border-radius: 5%;
-    box-shadow:0px 5px 50px #ab3e3e;
+    box-shadow:0px 5px 20px #0473bc;
     /* box-shadow: 10px 5px 5px #add7e6; */
 }
 
@@ -33,7 +33,6 @@ body {
     display: inline-block;
     margin: 13% 0 7% 0;
     border-bottom: 1px solid #0473bc;
-
 }
 
 .txt-tit {
@@ -64,16 +63,19 @@ body {
 }
 
 .put-loan-amount:hover {
-    box-shadow:0px 1px 10px #ab3e3e;
+    box-shadow:0px 1px 10px #0473bc;
+    border: 3px solid #0473bc;
     /* border: 3px solid #589cc9; */
 }
 
 .put-loan-period:hover {
-    box-shadow:0px 1px 10px #ab3e3e;
+    box-shadow:0px 1px 10px #0473bc;
+    border: 3px solid #0473bc;
 }
 
 .put-loan-interest-rate:hover {
-    box-shadow:0px 1px 10px #ab3e3e;
+    box-shadow:0px 1px 10px #0473bc;
+    border: 3px solid #0473bc;
 }
 
 .put-loan-amount, .put-loan-period, .put-loan-interest-rate {
@@ -95,11 +97,13 @@ body {
 }
 
 .cal:hover {
-    box-shadow:0px 1px 10px #ab3e3e;
+    box-shadow:0px 1px 10px #0473bc;
+    border: 3px solid #0473bc;
 }
 
 .reset:hover {
-    box-shadow:0px 1px 10px #ab3e3e;
+    box-shadow:0px 1px 10px #0473bc;
+    border: 3px solid #0473bc;
 }
 
 input {
@@ -118,27 +122,43 @@ input {
     padding-bottom: 3%;
 }
 
-
 .txt-loan-interest-rate {
     margin-bottom: 1rem;
 }
 
+.btn-container {
+    margin-top: 5%;
+}
+
 button.reset {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
+}
+
+/* loading -------------------------------------- */
+
+@keyframes rotate {
+    50% {
+        transform: rotate(180deg);
+    }
+    
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 .sec-loading {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
 .img-loading {
     width: 100px;
     height: 100px;
+    animation: rotate 5s infinite linear;
 }
+
 .sec-short-result {
     margin-bottom: 1rem;
 }
-
 
 .table-detailed-result {
     display: inline-block;
