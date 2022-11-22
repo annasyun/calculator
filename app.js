@@ -18,13 +18,17 @@ const valueInterest = document.querySelector(".value-interest");
 
 // 계산결과 디테일 (회차, 납입금액, 원금, 이자 ,잔금) - 보류
 
+// 콤마찍기, 문자열 입력시 0 출력 기능
+function comma(e) {
+    let value = e.target.value;
+    value = Number(value.replaceAll(',', ''));
+    if(isNaN(value)) {         //NaN인지 판별
+        inpLoanAmount.value = 0;   
+    }else {                   //NaN이 아닌 경우
+      const formatValue = value.toLocaleString('ko-KR');
+      inpLoanAmount.value = formatValue;
+    }
+  }
 
+inpLoanAmount.addEventListener('keyup', comma)
 
-function comma(){
-    let x = inpLoanAmount.value;
-    let y = x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
-    console.log(y);
-    inpLoanAmount.value = y;
-}
-
-inpLoanAmount.addEventListener("keydown", comma);
