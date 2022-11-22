@@ -1,4 +1,5 @@
-/* font 다운 필요*/
+/* font 다운 필요 */
+
 @font-face {
     font-family: 'GmarketSansMedium';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
@@ -20,8 +21,8 @@ body {
     /* background-color: #0473bc; */
     margin: 0 auto;
     margin-top: 5%;
-    width: 500px;
-    height: 750px;
+    width: 400px;
+    height: 550px;
     border-radius: 5%;
     box-shadow:0px 5px 20px #0473bc;
     /* box-shadow: 10px 5px 5px #add7e6; */
@@ -29,53 +30,82 @@ body {
 
 
 /* header -------------------------------------- */
+
 .cont-tit {
     display: inline-block;
-    margin: 13% 0 7% 0;
+    margin: 10% 0 10% 0;
     border-bottom: 1px solid #0473bc;
 }
 
 .txt-tit {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 700;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
 }
 
 .txt-tit-desc {
-    margin: 8% 0 8% 0;
+    font-size: 0.9rem;
+    margin: 4% 0 5% 0;
     font-weight: bold;
 }
 
 /* main -------------------------------------- */
+
+input {
+    font-weight: bold;
+}
+
 .form-loan-info {
     display: flex;
     flex-direction: column;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     
 }
+
+.box-deco {
+    border-radius: 10px;
+    background: linear-gradient( to right, yellow, white );
+    line-height: 1.5;
+}
+
 
 .form-loan-info span {
     display: inline-block;
     width: 100px;
     height: 20px;
     font-weight: bold;
-    /* background-color:#059fdb; */
+    background-color:#dce533;
 }
 
 .put-loan-amount:hover {
     box-shadow:0px 1px 10px #0473bc;
     border: 3px solid #0473bc;
-    /* border: 3px solid #589cc9; */
+}
+
+.put-loan-amount:focus {
+    border: 3px solid #0473bc;
+    outline: none;
 }
 
 .put-loan-period:hover {
     box-shadow:0px 1px 10px #0473bc;
     border: 3px solid #0473bc;
+    
+}
+
+.put-loan-period:focus {
+    border: 3px solid #0473bc;
+    outline: none;
 }
 
 .put-loan-interest-rate:hover {
     box-shadow:0px 1px 10px #0473bc;
     border: 3px solid #0473bc;
+}
+
+.put-loan-interest-rate:focus {
+    border: 3px solid #0473bc;
+    outline: none;
 }
 
 .put-loan-amount, .put-loan-period, .put-loan-interest-rate {
@@ -84,9 +114,40 @@ body {
     /* margin-left: 20px; */
     border: 3px solid #b5cbd9;
     border-radius: 5px;
-    width: 250px;
+    width: 200px;
     height: 25px;
     padding-left: 10px;
+}
+
+.txt-loan-interest-rate {
+    margin-bottom: 1rem;
+}
+
+/* method -------------------------------------- */
+
+.method {
+    margin: 0 auto;
+    margin-top: px;
+    margin-bottom: 20px;
+    width: 100px;
+    border-bottom: 1px solid #0473bc;
+    padding-bottom: 3%;
+    font-size: 1rem;
+}
+
+.txt-repayment-type {
+    margin-top: 5%;
+    font-size: 0.8rem;
+}
+
+/* button -------------------------------------- */
+
+.btn-container {
+    margin-top: 5%;
+}
+
+button.reset {
+    margin-bottom: 2rem;
 }
 
 .cal, .reset {
@@ -106,34 +167,6 @@ body {
     border: 3px solid #0473bc;
 }
 
-input {
-    font-weight: bold;
-}
-
-.txt-repayment-type {
-    margin-top: 5%;
-}
-
-.method {
-    margin: 0 auto;
-    margin-bottom: 20px;
-    width: 100px;
-    border-bottom: 1px solid #0473bc;
-    padding-bottom: 3%;
-}
-
-.txt-loan-interest-rate {
-    margin-bottom: 1rem;
-}
-
-.btn-container {
-    margin-top: 5%;
-}
-
-button.reset {
-    margin-bottom: 2rem;
-}
-
 /* loading -------------------------------------- */
 
 @keyframes rotate {
@@ -147,15 +180,19 @@ button.reset {
 }
 
 .sec-loading {
-    margin-bottom: 2rem;
+    margin-bottom: 5rem;
+    position: relative;
+    opacity: 50%;
 }
 
 .img-loading {
     width: 100px;
     height: 100px;
-    animation: rotate 5s infinite linear;
+    animation: rotate 3s infinite linear;
 }
 
+
+/* result -------------------------------------- */
 .sec-short-result {
     margin-bottom: 1rem;
 }
