@@ -32,3 +32,17 @@ function comma(e) {
 
 inpLoanAmount.addEventListener('keyup', comma)
 
+// 대출기간 범위 지정 
+function range () {
+  if (inpLoanPeriod.value > 5 ) {
+    alert("최대 대출 기간은 5년 입니다.");
+  } else if (inpLoanPeriod.value < 0) {
+    alert("잘못된 기간입니다.");
+  } else if (inpLoanPeriod.value == "") {
+    alert("기간을 숫자로 입력하세요.");
+  }
+}
+
+inpLoanPeriod.addEventListener('blur', range)
+
+
