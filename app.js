@@ -1,7 +1,7 @@
 // inp 인풋 변수할당 (대출금액, 대출기간, 대출금리 인풋)
 const inpLoanAmount = document.querySelector(".put-loan-amount");
 const inpLoanPeriod = document.querySelector(".put-loan-period");
-const inpLoanInterest = document.querySelector(".put-loan-interest");
+const inpLoanInterest = document.querySelector(".put-loan-interest-rate");
 
 // btn 버튼 변수할당 (계산버튼, 리셋버튼)
 const btnCal = document.querySelector(".cal");
@@ -103,7 +103,6 @@ function range () {
 
 inpLoanPeriod.addEventListener('blur', range)
 
-=======
  function 만기일시상환(){
   console.log(valuePayment)
   console.log(valueInterest)
@@ -201,4 +200,3 @@ inpLoanPeriod.addEventListener('blur', range)
 btnCal.addEventListener('click',메인계산함수);
 // btnCal.addEventListener('click',modal);
 btnReset.addEventListener('click',인풋리셋함수);
->>>>>>> b98d6ae (table)
