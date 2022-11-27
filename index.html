@@ -32,10 +32,17 @@
                 </label>
             </form>
 
+<<<<<<< HEAD
             <form class="txt-repayment-type"><p class="method">상환방법</p>
                 <input class="put-repayment-type method-first" type="radio" name="repayment-type" required> 만기일시상환
                 <input class="put-repayment-type method-second" type="radio" name="repayment-type" required> 원금균등분할상환
                 <input class="put-repayment-type method-third" type="radio" name="repayment-type" required> 원리금균등분할상환
+=======
+            <form class="txt-repayment-type" name="repayment"><p class="method">상환방법</p>
+                <input id="method-first" class="put-repayment-type" type="radio" name="repayment-type" checked> 만기일시상환
+                <input id="method-second" class="put-repayment-type" type="radio" name="repayment-type"> 원금균등분할상환
+                <input id="method-third" class="put-repayment-type" type="radio" name="repayment-type"> 원리금균등분할상환
+>>>>>>> b98d6ae (table)
             </form>
 
             <section class="btn-container">
@@ -57,6 +64,7 @@
                 <strong class="value-interest"></strong>
             </section>
 
+<<<<<<< HEAD
             
             <table class="table-detailed-result">
                 <caption class="detailed-result cover-up">상세 대출이자 계산결과</caption>
@@ -79,6 +87,32 @@
                     </tr>
                 </tbody>
             </table>
+=======
+            <div class="cont-modal">
+                <table class="table-detailed-result">
+                    <caption class="detailed-result cover-up">상세 대출이자 계산결과</caption>
+                    <thead class="tit-detailed-result">
+                        <tr>
+                            <th>회차</th>
+                            <th>납입금액</th>
+                            <th>원금</th>
+                            <th>이자</th>
+                            <th>잔금</th>
+                        </tr>
+                    </thead>
+                    <tbody class="cont-detailed-result">
+                        <tr class="tr-detailed-result">
+                            <td id="회차" class="td-detailed-result"></td>
+                            <td id="납입금액" class="td-detailed-result"></td>
+                            <td id="원금" class="td-detailed-result"></td>
+                            <td id="이자" class="td-detailed-result"></td>
+                            <td id="잔금" class="td-detailed-result"></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+>>>>>>> b98d6ae (table)
 
         </main>
     </div>
