@@ -167,6 +167,18 @@ button.reset {
     border: 3px solid #0473bc;
 }
 
+
+
+/* result -------------------------------------- */
+.sec-short-result {
+    margin-top: 2rem;
+    position: relative;
+}
+
+.sec-short-result div {
+    display: none;
+}
+
 /* loading -------------------------------------- */
 
 @keyframes rotate {
@@ -179,24 +191,18 @@ button.reset {
     }
 }
 
-.sec-loading {
-    margin-bottom: 5rem;
-    position: relative;
-    opacity: 50%;
-}
 
 .img-loading {
+    position: absolute;
+    margin-top: -40px;
+    left: 37.5%;
     width: 100px;
     height: 100px;
     animation: rotate 3s infinite linear;
 }
 
 
-/* result -------------------------------------- */
-.sec-short-result {
-    margin-bottom: 1rem;
-}
-
 .cont-modal {
     display: none;
+    margin-top: 10rem;
 }

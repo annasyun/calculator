@@ -13,6 +13,8 @@ const inpMethodSecond = document.querySelector("#method-second");
 const inpMethodThird = document.querySelector("#method-third");
 
 // 계산결과 (총납입금액, 총이자)
+const shortResult = document.querySelector(".sec-short-result div");
+const loading = document.querySelector(".img-loading");
 const valuePayment = document.querySelector(".value-payment");
 const valueInterest = document.querySelector(".value-interest");
 
@@ -197,6 +199,12 @@ inpLoanPeriod.addEventListener('blur', range)
   //     document.body.appendChild(dataContentToTable)
   //   }
 
+function 간단결과(){
+  shortResult.style.display = 'block'
+  loading.style.display = 'none'
+}
+
 btnCal.addEventListener('click',메인계산함수);
+btnCal.addEventListener('click',간단결과);
 // btnCal.addEventListener('click',modal);
 btnReset.addEventListener('click',인풋리셋함수);
